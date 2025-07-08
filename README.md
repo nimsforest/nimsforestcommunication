@@ -7,9 +7,10 @@ A file-based communication ingestion pipeline that transforms "everything" into 
 ### 1. Add as Git Submodule (Required)
 
 ```bash
-# Add nimsforestcommunication as a submodule in tools/nimsforestcommunication
-git submodule add git@github.com:nimsforest/nimsforestcommunication.git tools/nimsforestcommunication
+git submodule add https://github.com/nimsforest/nimsforestcommunication.git tools/nimsforestcommunication
+```
 
+```bash
 # Navigate to the submodule directory
 cd tools/nimsforestcommunication
 
@@ -29,8 +30,8 @@ make nimsforestcommunication-init
 - `make nimsforestcommunication-hello` - Check system compatibility and prerequisites for addtomainmake/init
 - `make nimsforestcommunication-addtomainmake` - Add commands to main project Makefile
 - `make nimsforestcommunication-init` - Initialize communication folder structure
-- `make nimsforestcommunication-process` - Move communications through pipeline
-- `make nimsforestcommunication-extract-work` - Convert actionable items to work items
+- `make nimsforestcommunication-process` - Hook for custom processing logic (placeholder)
+- `make nimsforestcommunication-extract-work` - Hook for custom work extraction (placeholder)
 - `make nimsforestcommunication-lint` - Validate communication structure
 
 ## Core Concept
